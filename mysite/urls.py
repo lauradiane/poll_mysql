@@ -7,4 +7,5 @@ urlpatterns = patterns('',
     url(r'^polls/', include('poll.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index.html', 'poll.views.home'),
+    url(r'^$', 'poll.views.home'),
 )
